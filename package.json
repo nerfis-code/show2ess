@@ -1,0 +1,17 @@
+{
+  "name": "show2ess",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node src/show2ess.js",
+    "test": "node src/test.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@pkmn/dex": "^0.9.33"
+  }
+}
