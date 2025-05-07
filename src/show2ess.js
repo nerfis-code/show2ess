@@ -8,7 +8,7 @@ const formByGender = ["Nidoran-F", "Nidoran-M"]
 const genders = ["fE", "mA"]
 const genders2 = ["female", "male"]
 const formByType = ["Silvally", "Arceus"]
-const types = ["Normal", "Fighting", "Flying", "Poison", "Ground", "Rock", "Bug", "Ghost", "Steel", "Fire", "Water", "Grass", "Electric", "Psychic", "Ice", "Dragon", "Dark", "Fairy"]
+const types = ["Normal", "Fighting", "Flying", "Poison", "Ground", "Rock", "Bug", "Ghost", "Steel", "QMARKS", "Fire", "Water", "Grass", "Electric", "Psychic", "Ice", "Dragon", "Dark", "Fairy"]
 const rotom = {
     "Rotom-Heat": "ROTOM_1",
     "Rotom-Wash": "ROTOM_2",
@@ -41,7 +41,7 @@ function set(key, value) {
 }
 for (const pkmn of Dex.forGen(9).species.all()) { /* TODO: añadir todos los pikachus */
     if (pkmn.forme !== '' || pkmn.num < 1) continue // ignorar formas y fakepokemons
-    let { name, otherFormes, canGigantamax, formeOrder } = pkmn
+    let { name, otherFormes, canGigantamax, formeOrder, cosmeticFormes } = pkmn
 
     if (pkmn.name === 'Pikachu') {
         Object.keys(pikachus).forEach(key => set(key, pikachus[key]))

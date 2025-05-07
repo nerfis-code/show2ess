@@ -12,6 +12,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@pkmn/dex": "^0.9.33"
+    "@pkmn/dex": "0.9.34"
   }
 }
